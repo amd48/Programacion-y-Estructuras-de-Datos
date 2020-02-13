@@ -1,0 +1,5 @@
+es vacio
+inorden={(9 9) (10 10) (12 12)}
+postorden={(9 9) (12 12) (10 10)}
+niveles={(10 10) (9 9) (12 12)}
+inorden={}

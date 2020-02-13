@@ -1,0 +1,131 @@
+1. La eleccion de la estructura de datos que soportara el TAD debe tomarse en la fase de especificacion, no en la fase de implementacion. Falsa.
+
+2. El calificativo abstracto hace referencia a que lo que importa es como se hacen las cosas y no lo que se hace. Falsa.
+
+3. Altura: Arbol -> natural Si a pertenece arbol, b pertence item, entonces b = altura(a) es un uso sintacticamente correcto de la operacion. Falso
+
+4. Las operaciones ocultas forma parte de la definicion de un TAD. falso.
+
+5. Para definir la semantica de una operacion de un tipo de datos solo se pueden usar operaciones constructoras generadoras. falso.
+
+6. Si no definimos la semantica de un tipo, las ecuaciones siguiente(siguiente(uno)) y sumar(uno, siguiente(uno)) son equivaletes. falso
+
+7. Las operaciones auxiliares de un TAD tambien se les llama ocultas o privadas. verdadero
+
+8. Las operaciones consultoras modificadoras permiten generar cualquier valor del tipo. falso
+
+9. La complejidad temporal en el peor caso de insertar un elemento en un vector ordenado o en una lista ordenada es la misma. verdadero.
+
+10. La complejidad temporarl para desencolar o desapilar en una cola o pila que no permitan duplicados es la misma. verdadero.
+
+11. En la lista se establece un orden secuencial a partir de las posiciones que ocupan sus elementos. verdadero
+
+12. La complejidad temporal de la operacion apilar en una pila es siempre O(1). falso, depende de la implementacion.
+
+13. Si en un arbol binario representado secuencialmente, el nodo padre ocupa la posicion 5 sus hijos estan en las posiciones 10 y 11. verdadero
+
+14. O(n · log n) subconjunto O(n) falso
+
+15. O(log n) subconjunto O(log(log(n)) falso.
+
+16. En una cola representada secuencialemente con unico puntero al fondo de la cola las operaciones de encolar y desencolar tienen como complejidades O(1) y O(n) respectivamente.
+verdadera.
+17. En una cola representada secuencialmente con unico puntero a la cabeza de la cola, las operaciones de encolar y desencolar tienen como complejidades O(1) y O(n) respectivamente.
+falsa.
+18. Se puede reconstruir un unico arbol a partir de los recorridos ird: 12345 y niveles: 32415.
+		3
+	   2 4
+	  1   5
+verdadero
+19. Se pueden reconstruir 2 arboles a partir de los recorridos rid: 34 niveles: 34
+	3        3
+     4      4
+verdadero.
+20. La operacion esvacia(pila) => cierto
+		esvacia(crear()) => cierto
+		esvacia(apilar(crear, x)) => esvacia(crear)
+Es correcta.
+falso
+
+21. Teniendo en cuenta la semantica de la operacion asig(vector, posicion, item) => vector vista en clase, las expresiones asig(asig(crear, 2, 3), 5, 6) y asig(asig(crear,5, 6), 2, 3) son equivalentes.
+verdadero 
+22. La complejidad en el caso peor de insertar en una lista representada secuencialemnte y un arbol binario de busqueda representado de forma enlazada es la misma
+verdadero
+
+23. La operacion buscar(vector, elemento) => logico
+		buscar(crear, x) => error_item
+		buscar(asig(v, pos, x), elemento) => x == elemento o buscar(v, elemento)
+Es correcta.
+falsa
+
+24. La operacion Insertar(lista, posicion, elemento) => lista
+	insertar(crear, p, e) => crear
+	si p = primera(insertarCabeza(l, x)) entonces
+		insertar(insertarCabeza(l, x), p, y) => insertarCabeza(insertarCabeza(l, x), y)
+	sino
+		insertar(insertarCabeza(l, x), p, y) => insertarCabeza(insertar(l, p, y), x)
+Es correcta.
+Falso.
+
+25. Independientemente del tipo de herencia la clase derivada podra acceder a lo publico y protegido de la clase base pero no a lo privado.
+veradero
+26. En el layering en el constructor de la clase nueva se invoca al constructor de las clases que contiene de forma implicita.
+verdadero.
+27. Definamos o no un destructor siempre tendremos uno en la clase.
+verdadero.
+28. Todos los metodos definidos dentro de una clase tienen como parametro implicio el puntero this.
+falso. los metodos static no tienen this
+29. El valor de this no se puede modificar.
+verdadero
+30. La  sobrecarga del operador [] definida asi:
+	int operator[](int i) const;
+Puede aparecer tanto en la parte izquierda como en la parte derecha de una asignacion.
+falso
+31. La sobrecarga del operador ++ definida asi.
+	int operator++(int i);
+se trata de un post-incremento.
+verdadero
+32. Podemos invocar al siguiente constructor:
+		TComplejo(double re = 0, double im = 0);
+de las siguientes formas:
+	TComplejo c();
+	TComplejo c2(3, 3);
+	TComplejo c3(3);
+	TComplejo c4(, 4);
+falsa
+33. En la siguiente funcion:
+	void inc(TComplejo c){
+		c.re++;
+	}
+Se invoca al constructor y al destructor de TComplejo.
+verdadero
+
+34. En una lista doblemente enlazada las operaciones de insertar el menor elemento e insertar mayor elemento en una lista ordenada es la misma.
+verdadero, en ambos casos es constante.
+
+35. En un ABB el mejor caso en la insercion se da cuando el arbol esta lleno o completo.
+verdadero
+36. Podemos tenemos tener dos ABB con los mismos recorridos inorden y preorden.
+falso
+37. El maximo numero de hojas en un arbol de altura k es 2^k - 1
+verdadero
+38. La operacion f(arbol) => natural
+	f(crear) => 0
+	f(enr(crear, x, crear)) => 1
+	f(enr(i, x, d)) = > 1 + f(i) + f(d)
+devuelve el numero de hojas en el arbol
+falso
+39 la operacion f(arbol) => arbol
+	f(crear) => crear
+	f(enr(crear, x, crear)) => x // crear
+	f(enr(i, x, d)) = enr(f(i), x, f(d))
+devuelve el arbol sin las hojas.
+falso
+
+
+
+
+
+
+
+

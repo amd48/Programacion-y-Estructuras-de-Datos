@@ -1,0 +1,9 @@
+Complejo borrado(1 0)
+niveles: {(2 0) (3 0)}
+inorden: {(2 0) (3 0)}
+Complejo borrado(2 0)
+niveles: {(3 0)}
+inorden: {(3 0)}
+Complejo borrado(3 0)
+niveles: {}
+inorden: {}

@@ -1,0 +1,10 @@
+a.Inorden(): {(10 10) (20 20) (30 30) (40 40) (50 50)}
+a.Preorden(): {(40 40) (20 20) (10 10) (30 30) (50 50)}
+b.Inorden(): {(10 10) (20 20) (30 30) (40 40) (50 50)}
+b.Preorden(): {(40 40) (20 20) (10 10) (30 30) (50 50)}
+a y b son iguales
+c.Inorden(): {}
+c.Preorden(): {}
+d.Inorden(): {}
+d.Preorden(): {}
+c y d son iguales

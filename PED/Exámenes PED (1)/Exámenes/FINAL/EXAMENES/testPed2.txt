@@ -1,0 +1,144 @@
+LINEALES 1
+1. El TAD vector visto en clase se define como un conjunto ordenado de pares <índice, valor>. Para cada índice definido dentro de un rango finito existe asociado un valor.
+
+2. En cualquier tipo de datos lineal cada elemento tiene como máximo un único sucesor y un único predecesor
+
+3. En la lista de acceso por posición (vista en clase) se establece un orden secuencial estricto a partir de las posiciones que ocupan sus elementos.
+
+4. En la lista de acceso por posición (vista en clase) se establece un orden secuencial estricto a partir de las posiciones que ocupan sus elementos.
+
+5. La complejidad temporal de obtener un elemento en un vector ordenado mediante búsqueda binaria o en una lista ordenada es la misma
+6. LA COMPLEJIDAD TEMPORAL (EN SU PEOR CASO) DE LA OPERACIÓN DE INSERTAR UN ELEMENTO EN UNA COLA CIRCULAR ENLAZADA QUE NO ADMITE ELEMENTOS REPETIDOS ES O(N), SIENDO N EL NÚMERO DE ELEMENTOS DE LA COLA.
+7. La operación BorrarItem tiene la siguiente sintaxis y semántica:
+BorrarItem: LISTA, ITEM -> LISTA
+BorrarItem( Crear, i) =	Crear
+BorrarItem( IC(L1,j), i) =	si ( i == j ) entonces L1
+sino IC ( BorrarItem (L1, i ), j )
+8. Esta operación borra todas las ocurrencias del item que se encuentra en la lista
+9. La operación de lista: Longitud: (LISTA) --> NATURAL es una operación consultora
+
+LINEALES 2
+1. El tipo de datos vector (visto en clase) se define como un conjunto en el que sus componentes ocupan posiciones consecutivas de memoria
+
+2. En cualquier tipo de datos lineal cada elemento tiene un único sucesor y varios predecesor
+
+3. Es posible obtener una representación enlazada de una cola utilizando un único puntero que apuntará al fondo de la cola. (PONIENDO EL FONDO EN EL PRIMER NODO)
+VERDADERO.
+
+4. La complejidad temporal de la operación desapilar vista en clase utilizando vectores ( con un indice que indica la cima ) o listas es la misma
+
+5. La complejidad temporal en el peor caso para la inserción de un elemento en una lista ordenada y en otra no ordenada, que no permiten elementos repetidos, siempre es lineal con el número de elementos en ambos casos
+
+6. La operación BorrarItem, que borra todas las ocurrencias del item i que se encuentren en la lista, tiene la siguiente sintaxis y semántica:
+BorrarItem: LISTA, ITEM -> LISTA
+BorrarItem( Crear, i) =	Crear
+BorrarItem( IC(L1,j), i) =	si ( i == j ) entonces BorrarItem (L1, i )
+sino IC ( BorrarItem (L1, i ), j )
+7. La operación BorrarItem tiene la siguiente sintaxis y semántica:
+BorrarItem: LISTA, ITEM -> LISTA
+BorrarItem( Crear, i) =	Crear
+BorrarItem( IC(L1,j), i) =	si ( i == j ) entonces L1
+sino IC ( BorrarItem (L1, i ), j )
+
+8. Esta operación borra la primera ocurrencia del item que se encuentra en la lista
+
+9. La semántica de la operación cima del tipo pila vista en clase es la siguiente:
+VAR p: pila, e: item;
+cima( crear( ) ) = error( )
+cima( apilar( p, e ) ) = cima( p )
+
+
+COMPLEJIDAD 1
+1.El algoritmo de búsqueda binaria estudiado en clase (búsqueda de un elemento en un vector ordenado) tiene una complejidad de O(log2n).
+
+2.El algoritmo de intercambio directo o burbuja estudiado en clase (ordenación de los elementos de un vector) tiene una complejidad de Ω(n2), siendo n el número de elementos del vector.
+
+TODOS LOS ALGORITMOS DE ORDENACION DIRECTOS TIENEN COMPLEJIDAD N² EN EL CASO MEJOR/PEOR MENOS INSERCIÓN DIRECTA EN EL CASO MEJOR QUE ES N (VECTOR ORDENADO DE MENOR A MAYOR).
+
+3.El resultado del cálculo de la complejidad temporal en el mejor caso de un algoritmo X, da como resultado n + n*log(n). Por lo tanto, diremos que la complejidad del algoritmo X cuando n → ∞∞ pertenece a Ω (n).
+
+4.En la escala de complejidades se cumple que O(log n) ⊂⊂ O(log log n).
+
+5.La complejidad espacial es la cantidad de recursos espaciales que un algoritmo consume o necesita para su ejecución
+
+6.La complejidad temporal del siguiente fragmento de código es O(n)
+int i, j, n, sum;
+for (i = 4; i < n; i++) {{
+for (j = i–3, sum = a[i-4]; j <= i; j++) sum += a[j];
+cout << “La suma del subarray “ << i-4 << “ es “ << sum << endl; }
+
+TRAMPA: EL SEGUNDO BUCLE SIEMPRE HACE 3 ITERACIONES NAZIS.
+
+7.La complejidad temporal (en su caso peor) del siguiente fragmento de código es O(n2 )
+
+int i, j, n, sum;
+
+for (i = 4; i < n; i++) {{
+  for (j = i–3, sum = a[i-4]; j <= i; j++)   sum += a[j];
+
+  cout << “La suma del subarray “ << i-4 << “ es “ << sum << endl; }
+
+8.LA COTA PROMEDIO DE COMPLEJIDAD ES EL RESULTADO DE HACER LA MEDIA ENTRE LA COTA SUPERIOR Y LA COTA INFERIOR.
+
+9. Si la complejidad temporal de un algoritmo en el mejor caso es lineal y en el peor caso es lineal, podemos decir que la complejidad promedio es lineal
+
+
+TADS1.
+Altura: Árbol --> Natural
+Si A ϵϵ Árbol, b ϵϵ Ítem, entonces b=Altura (A) es un uso sintácticamente correcto de la operación
+
+El tiempo requerido por un algoritmo expresado en función de la talla del problema se llama complejidad espacial del algoritmo
+
+En la especificación algebraica, para definir la semántica de una operación de un tipo de datos sólo se pueden utilizar las operaciones generadoras constructoras
+
+EsVacia: PILA -> BOOLEAN
+Si P y Q son pilas: Q = EsVacia ( P ), es un uso sintácticamente correcto de la operación
+
+Las operaciones generadoras son aquellas que permiten generar todos los valores del TAD a especificar
+
+Longitud: LISTA -> NATURAL
+Si L es una lista, a es un item de la lista: a = Longitud ( L ) es un uso sintácticamente incorrecto de la operación
+
+Los enriquecimientos no forman parte de la definición de un TAD
+Sea el siguiente TAD:
+
+MÓDULO NATURALEXAMEN
+TIPO natural
+OPERACIONES
+uno: --> natural;
+siguiente: natural --> natural
+sumar: natural natural --> natural
+FMÓDULO
+
+Si N es un natural:
+N = sumar(uno,siguiente(uno)) es un uso sintácticamente incorrecto de la operación sumar.
+Una operación del TAD X que tenga la sintaxis Crear() -->X es una operación constructora generadora.
+
+TADS2
+Dentro de la especificación algebraica de los números naturales definimos la sintaxis de la función F como:F: natural-->BOOL, y su semántica como: F(cero)=TRUE,
+F(suc(cero))=FALSE,
+F(suc(suc(x)))=F(x).
+Para el número natural x=35, la función F devolvería FALSE.
+Nota: se asume que x=35 es la forma simplificada de indicar x=suc(suc(suc(……..suc(cero)…….))).
+
+En la escala de complejidades, la complejidad logarítmica es menor que la lineal.
+
+En la especificación de un TAD, una operación consultora devuelve un valor del tipo definido.
+
+Las ecuaciones (vistas en clase) que permiten realizar la suma de números naturales son las siguientes:
+VAR x, y: natural;
+suma(x, cero) = x
+suma(cero, x) = x
+suma(x, suc(y)) = suma(x, y)
+
+Las operaciones modificadoras de un TAD permiten generar, por aplicaciones sucesivas, todos los valores del TAD a especificar.
+
+Longitud: LISTA -> NATURAL
+Si L es una lista, a es un ítem de la lista: a = Longitud ( L ) es un uso sintácticamente correcto de la operación Longitud
+
+Para el tratamiento de errores en la especificación algebraica, se añaden funciones constantes que devuelven un valor del tipo que causa el error.
+
+Una expresión está en forma reducida si contiene operaciones que pertenecen sólo al conjunto de los constructores
+
+
+

@@ -1,0 +1,59 @@
+int* TABBCalendario::examen(TListaCalendario &l1,TListaCalendario &l2){
+	int lon;
+
+	if(l1.Longitud() > l2.Longitud())
+		lon = l1.Longitud();
+	else
+		lon = l2.Longitud();
+
+
+	int *res;
+	res = new int[lon];
+
+	for(int i=0;i<lon;i++){
+		res[i] = 0;
+	}
+
+	if(l1.EsVacia() && l2.EsVacia()){
+		int ros[0];
+		return(ros);
+	}
+
+
+
+	TListaPos aux,aux2;
+	aux = l1.Primera();
+	aux2 = l2.Primera();
+	int j = 0;
+	while(!aux.EsVacia() && !aux2.EsVacia()){
+		if(Buscar(aux.pos->c) && Buscar(aux2.pos->c)){
+			if(aux.pos->c == aux2.pos->c){
+				res[j] = 1;
+			}
+			else if(aux.pos->c > aux2.pos->c){
+				TABBCalendario abbAux = examenAux(*this,aux.pos->c);
+				if(abbAux.Buscar(aux2.pos->c)){
+					res[j] = 1;
+				}
+			}
+		}
+		j++;
+		aux = aux.Siguiente();
+		aux2 = aux2.Siguiente();
+	}
+	return(res);
+}
+
+TABBCalendario TABBCalendario::examenAux(TABBCalendario abb, TCalendario cal){
+	if(abb.Raiz() == cal){
+		return(abb);
+	}
+	else{
+		if(abb.Raiz() > cal){
+			return(examenAux(abb.raiz->iz,cal));
+		}
+		else{
+			return(examenAux(abb.raiz->de,cal));
+		}
+	}
+}

@@ -1,0 +1,60 @@
+1. La siguiente operacion:
+	F(cero()) => falso
+	F(suc(cero) => cierto
+	F(suc(suc(x)) = > F(suc(x))
+Devuelve cierto si el argumento es impar. FALSO. Devu
+
+2. Las operaciones constructoras generadoras del tipo posicion utilizado en lista son:
+	crear() => posicion, Primera(lista) =>posicion, Ultima(lista) => posicion
+FALSO, PORQUE ULTIMA ES CONSTRUCTURA MODIFICADORA.
+
+3. La complejidad en el mejor caso de ordenar un vector de mayor a menor mediante el algoritmo de inserción directa ocurre cuando el vector esta ordenado de menor a mayor y es n.
+FALSO
+4. Los algoritmos de ordenacion directos no usan memoria auxiliar para ordenar el vector.
+VERDADERO.
+5. Las operaciones sum(suc(x), cero()) y sum(cero(), suc(x)) designan el mismo valor.
+falso.
+6. Se puede implementar una cola mediante representacion enlazada con un unico puntero al fondo.
+VERDADERO
+7. La complejidad de insertar en una cola es la misma que la complejidad de insertar en una pila.
+FALSO. DEPENDE DE COMO IMPLEMENTE AMBOS TADS.
+
+8. Es posible reconstruir un arbol binario de busqueda si conocemos su recorrido inorden.
+TENDRIA DOS RECORRIDOS Y AMOOOOSSS SERIAN INORDEN.
+
+8.1 Es posible reconstruir un arbol binario de busqueda si conocemos su recorrido preorden.
+PARA RECONSTRUIR UN ARBOL NECESITAMOS DOS RECORRIDOS Y UNO DE ELLOS DEBE SER INORDEN.
+SI AL ABB, ORDENANDO LAS ETIQUETAS DEL RECORRIDO QUE ME DAN OBTENEMOS INORDEN.
+PREORDEN => ORDENDO LAS ETIQUETAS Y TENGO INORDEN => 2 RECORRIDOS.
+VERDADERO.
+
+8.2 Es posible reconstruir un arbol binario si conocemos su recorrido preorden.
+FALSO, NO ES DE BUSQUEDA.
+
+9. El arbol ABB se puede degradar a lista solo si los elementos que insertarmos se insertan en orden
+de mayor a menor o de menor a mayor.
+FALSO. 9 5 7 6
+		9
+       /
+      5
+       \
+        7
+       /
+      6
+
+10. La siguiente operacion:
+	F(enr(i, x, crear())) => x
+	F(enr(i, x, d) => F(d)
+Devuelve el menor elemento del arbol.
+FALSO, DEVUELVE EL MAYOR. TENDRIA QUE SER EL PRIMERO QUE NO TIENE HIJO IZQUIERDO.
+
+constructoras generadoras
+	pila: crear() => pila apilar(pila) => pila
+	natural: cero() => natural  suc(natural) => natural
+	cola: crear() => cola, enconlar(cola) => cola
+	lista: crear() => lista insertarCabeza(lista, item) => lista
+	vector: crear() => vector asignar(vector, posicion, valor) => vector
+	arbol: crear() => arbol  enraizar(arbol, item, arbol) => arbol
+	posicion: crear() => posicion primera(lista) => posicion
+
+

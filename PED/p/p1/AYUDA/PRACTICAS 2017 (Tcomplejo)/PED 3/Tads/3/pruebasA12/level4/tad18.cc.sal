@@ -1,0 +1,6 @@
+Complejo borrado(3 0)
+niveles: {(2 0) (1 0) (4 0) (5 0)}
+inorden: {(1 0) (2 0) (4 0) (5 0)}
+Complejo borrado(2 0)
+niveles: {(4 0) (1 0) (5 0)}
+inorden: {(1 0) (4 0) (5 0)}

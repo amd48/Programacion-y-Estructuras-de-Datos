@@ -1,0 +1,62 @@
+1. La operacion producto(natural, natural) => natural es una operacion constructora modificadora y derivada.
+VERDADERO. ES DERIVADA PORQUE USA LA SUMA.
+2. La operacion apilar sobre una pila con representacion enlazada donde tenemos un unico puntero a la cabeza
+de la pila es de coste constante.
+VERDADERO.
+3. La operacion de busqueda en un arbol binario de busqueda, en su peor caso es lineal con la altura y con el numero de nodos del arbol.
+VERDADERO. Si esta degradada a lista el numero de nodos y la altura coinciden.
+4. La operacion siguiente:
+	F(cola) => item
+	F(enc(crear, x)) => x
+	F(enc(cola, x)) => cola
+Devuelve el ultimo elemento econlado.
+FALSO, DEVUELVE EL PRIMER ELEMENTO ENCOLADO.
+5. La operacion siguiente
+	F(crear()) => 1
+	F(insertarCabeza(lista, item)) => F(lista) + 1
+Devuelve el numero de nodos de la lista.
+DEVUELVE UN NODO MAS.
+6. Los nodos terminales son nodos cuyo numero de hijos es 0.
+VERDADERO.
+7. En ABB todos los nodos hoja estan al mismo nivel.
+FALSO.
+7.1. En un arbol binario completo todos los nodos hojas estan al mismo nivel.
+FALSO
+7.2. En un arbol binario lleno todos los nodos hojas estan al mismo nivel.
+VERDADERO.
+8. Existen 3 recorridos en profundidad y un recorrido en anchura.
+FALSO. IRD RID IDR (DRI RDI DIR son los inversos especulares)
+9. El número de nodos en el nivel i siempre será inferior al numero de nodos en el nivel i+1 en
+un arbol binario.
+FALSO.
+10. La siguiente operacion
+	F(enr(crear)) => crear
+	F(enr(crear, x, crear)) => crear
+	F(enr(i, x, d)) => enr(F(i), x, d)
+quita todas las hojas del arbol.
+FALSO, NO HACE LA LLAMADA RECURSIVA POR EL ARBOL DERECHO d.
+
+11. La operaciones constructoras generadoras tienen sintaxis pero no semantica.
+asig(vector, posicion, item) => vector (sintaxis)
+
+si i = j entonces
+	asig(asig(v, i, x), j, y) => asig(v, i, y)  # nos sobrescribe la posicion si esta ya existia
+sino
+	asig(asig(v, i, x), j, y) => asig(asig(v, j, y), i, x) # me permite cambiar el orden de los pares
+
+12. Siempre que borremos una hoja en un arbol binario de busqueda decrecera la altura del arbol.
+FALSO
+13. El recorrido inorden de un arbol binario obtiene las etiquetas ordenadas.
+FALSO
+14. En el recorrido preorden de un arbol binario de busqueda degradado a lista, el primer elemento del
+recorrido siempre sera el mayor o el menor elemento de los elementos insertados.
+
+15. En una cola circular con representacion enlazada con un unico puntero apuntando al fondo el coste
+de encolar y desencolar es constante.
+VERDADERA.
+
+16. En la representacion secuencia de un arbol binario de busqueda, el RECORRIDO por niveles se
+puede obtener recorriendo su representacion de izquierda a derecha.
+
+
+

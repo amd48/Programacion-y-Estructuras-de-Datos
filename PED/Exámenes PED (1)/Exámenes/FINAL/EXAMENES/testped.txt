@@ -1,0 +1,114 @@
+1. La complejidad del algoritmo de insercion directa para ordenar 
+un vector en el mejor de los casos es O(n). 
+
+2.Se puede reconstruir un unico arbol binario de busqueda teniendo
+sus recorridos preorden y postorden. 
+
+3. Se puede reconstruir un unico arbol binario teniendo sus
+recorridos postorden y preorden. 
+
+4. Se puede reconstruir un unico arbol binario completo con
+un unico recorrido, incluso si no es inorden. 
+
+5. Siempre que se realiza una rotacion en la insercion, decrece
+la altura del subarbol donde se realiza dicha rotación. 
+
+6. Siempre que se realiza una rotacion doble en el borrado, decrece
+la altura del subarbol donde se realiza la rotacion. 
+
+7. En la siguiente función de C++, int &incremento(int &valor){
+valor = valor + 5; return valor}, devuelve el resultado por referencia. 
+
+8. En C++ se pueden devolver referencias a variables locales. 
+
+9. En las colas, las inserciones y los borrados se realizan por el mismo extremo. 
+
+10. En las estructuras FIFO las inserciones y los borrados se hacen por los extremos
+contrarios. 
+
+11.a El numero maximo de nodos en el nivel i de un arbol binario es 2^i - 1. 
+
+11.b El numero maximo de nodos en el nivel i de un arbol binario es 2^(i - 1). 
+
+11.c El numero maximo de nodos en el nivel 10 de un arbol binario es 1024. 
+
+12. El numero maximo de nodos de un arbol binario de altura k es 2^(n-1) siendo n el maximo
+nivel de los nodos del arbol. 
+
+13. Los arboles AVL son arboles balanceados con respecto a la altura de sus subarboles. 
+
+14. Los arboles binario de busqueda son arboles AVL. 
+
+15. La operacion Apilar(pila, item) => pila es una operacion constructora generadora. 
+
+16. La operacion Desapilar(pila, item) => pila es una operacion constructora generadora.  
+
+17. La operacion Enraizar(item, arbol, item) => arbol es una operacion constructora generadora. 
+
+18. La operacion Invertir(lista) => lista es una operacion constructora modificadora. 
+
+19. La operacion longitud(lista) => natural es una operacion consultora. 
+
+19.c La operacion Palindromo vista en clase que recibe un vector y devuelve un valor lógico,
+es una operación consultora y derivada. 
+
+20. En C++ los miembros privados solo son accesibles desde los metodos de la clase donde se definen. 
+
+21. Un arbol completo siempre estara lleno. 
+
+22. Un arbol lleno siempre estara completo. 
+
+23. El coste temporal en el peor caso de la operacion de insercion en un arbol binario
+es log2(n) + 1 siendo n el numero de nodos del arbol. 
+
+24. El coste temporal en el peor caso de la operacion de insercion en un arbol AVL es n,
+siendo n el numero de nodos del arbol. 
+
+25. En un arbol AVL siempre que se haga una insercion crece la altura del arbol. 
+
+26. En un arbol AVL siempre que se haga una insercion hay que realizar una rotacion. 
+
+27. En la insercion en un arbol AVL podemos necesitar dos rotaciones dobles, para que 
+el arbol quede equilibrado. 
+
+28. El coste temporal en el peor caso de la operacion de insercion en un arbol binario de busqueda
+completo es log2(n). 
+
+29. Los arboles generales tambien se les llama arboles multicamino de busqueda. 
+
+30. Dados los recorridos preorden, postorden y niveles de un arbol de altura 2 y 1 hoja es posible
+reconstruir dos arboles binarios. 
+
+31. En C++ la siguiente declaracion int &a = 1 es incorrecta. 
+
+32. En C++ la siguiente declaracion const int &a = 1 es correcta. 
+
+33. En C++ la siguiente declaracion int b = 3; const int &a = b; es incorrecta. 
+
+34. En C++ la siguiente declaracion int b = 3; int &c = b; es incorrecta. 
+
+35. Es posible reconstuir un unico arbol binario de altura 6 a partir de un recorrido preorden
+con 62 etiquetas. 
+
+36. Es posible reconstruir un unico arbol binario de altura 6 a partir de un recorrido niveles
+con 62 etiquetas. 
+
+37. Es posible reconstruir un unico arbol binario de altura 12 a partir de un recorrido niveles
+con 4095 etiquetas. 
+
+38. En la escala de complejidades O(log n) C O(log log n). .
+
+39. En C++, el valor de la variable q al finalizar este fragmento de codigo es 16
+	int q = 1;
+	while(q < 12) q *= 2;
+
+40. El numero maximo de aristas en un arbol de altura k es 2^(k-1). 
+
+
+
+
+
+
+
+
+
